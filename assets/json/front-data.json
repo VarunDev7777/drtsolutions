@@ -1,0 +1,19 @@
+{
+    "probs": [
+        {
+            "index" : 1,
+            "title" : "Poor IT Performance & Service Delivery",
+            "explaination" : "Poorly performing IT Partners and IT Services reduce productivity and risk the integrity of your business."
+        },
+        {
+            "index" : 2,
+            "title" : "Controlling IT Costs",
+            "explaination" : "IT Services are one of the largest sunken or ongoing costs in any business therefore important to manage."
+        },
+        {
+            "index" : 3,
+            "title" : "Distraction from Business Priorities",
+            "explaination" : "Our typical customer doesn’t want to be distracted by IT Services that don’t add direct value to their customers."
+        }
+    ]
+}

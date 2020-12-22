@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyarachna - Explore Opportunities for Successful Business</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/scripts/smoothscroll.min.js"></script>
+</head>
+<body>
+    <%- include('./components/header.ejs') %>
+    <!-- slider -->
+    <div class="slider__component">
+        <div class="intro__slide">
+            <span>we're divya rachna technopreneurs</span>
+            <div class="animate__wtwedo">
+                <div class="wordanimate">
+                    <span class="running">supportive</span>
+                    <span class="paused">managed</span>
+                    <span class="paused">secure</span>
+                    <span class="paused">efficient</span>
+                </div>
+                <hr />
+            </div>
+            <p>We help great companies simplify and take <br /> control of their IT</p>
+            <div class="free__consultation">
+                <div class="play__button"><ion-icon name="play"></ion-icon></div>
+                <span>Get free consultation</span>
+            </div>
+        </div>
+    </div>
+    <!-- KEY PROBLEMS -->
+    <div class="key__problems">
+        <div class="probs__encloser">
+            <div class="prob_oc">
+                <h2>DIVYA RACHNA IT RESOLVES 3 KEY <br /> PROBLEMS FOR BUSINESS</h2>
+                <p>We’ve always known that for businesses large and small, 
+                    IT can be a real challenge to manage. Staying on top 
+                    of your technology includes controlling the costs 
+                    associated with keeping in-house staff up-to-date 
+                    with training, certifications and current trends.
+                </p>
+                <!-- Probs container -->
+                <div class="button__encloser">
+                    <button>discover our services</button>
+                    <img src="/assets/images/pngs/avatar.png" />
+                    <div class="contact__info">
+                        <span>(+91) 8860606323</span>
+                        <span>contact sale</span>
+                    </div>
+                </div>
+            </div>
+            <div class="act__probs">
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div class="service__container">
+        <div class="scon__headline">
+            <hr />
+            <div class="spandiv">Custom IT services and solutions built specifically for your business</div>
+            <hr />
+        </div>
+        <div class="service__cardcon">
+            <% for(let i=0; i<ServiceCards.length; i++) { %>
+                <div class="service-card">
+                    <div class="service-title"><%= ServiceCards[i].cardHead %></div>
+                    <div class="service-info"><%= ServiceCards[i].cardBody %></div>
+                    <div class="service-icon"><i class="<%= ServiceCards[i].cardImg %> et-icon"></i></div>
+                    <button class="service-anchor"><%= ServiceCards[i].cardAnchor %><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </div>
+            <% } %>
+        </div>
+        <div class="card__control">
+            <button class="service-show active"></button>
+            <button class="service-show"></button>
+        </div>
+    </div>
+    <script src="/assets/scripts/site_anim.js"></script>
+</body>
+</html>
