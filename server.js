@@ -3,7 +3,8 @@ const app = express();
 
 //Connecting MongoDB
 const mongoose = require("mongoose");
-mongoose.connect(`mongodb://${process.env.MONGOHOST}/divyarachna`, {
+// mongodb://localhost:27017/divyarachna
+mongoose.connect("mongodb+srv:icdam:icdam_2.0@icdamv.hiyrd.mongodb.net/divyarachna", {
   useNewUrlParser: !0,
   useUnifiedTopology: !0,
   useCreateIndex: 1,
