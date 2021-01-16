@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "dstart": "nodemon server.js",
+    "start": "node server.js",
     "watch": "sass --watch scss/index.scss:assets/css/style.css",
     "header": "sass --watch scss/header.scss:assets/css/header.css",
     "dev": "concurrently \"npm run start\" \"npm run watch\""
